@@ -1,9 +1,12 @@
+<h1>Creez votre nouvelle tache</h1>
+<ul class ="parentform">
 <%= form_with model: @task do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.label :completed %>
-  <%= f.check_box :completed %>
-  <%= f.submit %>
+  <li class ="childlabel"><%= f.label :title %></li>
+  <li class ="childform"><%= f.text_field :title %></li>
+  <li class ="childlabel"><%= f.label :details %></li>
+  <li class ="childform"><%= f.text_field :details %></li>
+  <li class ="childlabel"><%= f.label :completed %></li>
+  <li class ="childform"><%= f.check_box :completed %></li>
+  <li class ="childbtn"><%= f.submit %></li>
 <% end %>
+</ul>
